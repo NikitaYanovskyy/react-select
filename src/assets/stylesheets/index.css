@@ -1,0 +1,119 @@
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  margin: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.color_block {
+  height: 200px;
+  width: 100%;
+}
+
+.select {
+  width: 300px;
+  position: relative;
+}
+
+.select .select_items {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.selected_item, .selected_item_dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.selected_item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid teal;
+}
+
+.selected_item_content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 10px;
+}
+
+.selected_item_dropdown {
+  border-bottom: 1px solid teal;
+  border-left: 1px solid teal;
+  border-right: 1px solid teal;
+}
+
+.select_arrow {
+  position: relative;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+}
+
+.select_arrow .arrow_line {
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  background-color: teal;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.select_arrow .arrow_line:nth-of-type(1) {
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.select_arrow .arrow_line:nth-of-type(2) {
+  right: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #282c34;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */
