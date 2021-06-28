@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
-import SelectedItem from './SelectItem'
+import Item from './Item'
 
 const Select = (props) =>{
     const [initialValue, setInitialValue] = useState(props.initialValue);
@@ -18,7 +18,7 @@ const Select = (props) =>{
     }
 
     const itemList = props.itemList.map((value, index)=>{
-        return <SelectedItem key={index} onItemClick={onItemClick} content={value}/> 
+        return <Item key={index} onItemClick={onItemClick} content={value}/> 
     })
     return (
         <div className="select">

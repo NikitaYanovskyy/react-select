@@ -5,7 +5,7 @@ import Select from '../Select/Select'
 const Card = () =>{
     const [data, setData] = useState([{
         color: 'palegoldenrod',
-        html: '<div>color</div>'
+        html: '<div style="color: red">color</div>'
     }, {
         color: 'palegreen',
         html: '<div>color</div>'
